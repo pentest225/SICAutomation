@@ -17,6 +17,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
+import ci.orange.presentation.R
 import com.plcoding.core_ui.LocalSpacing
 @ExperimentalMaterial3Api
 @Composable
@@ -61,7 +62,7 @@ fun OCIEditText(
 
             placeholder = {
                 Text(
-                    text = stringPlaceholder?: stringResource(id = placeholder!!),
+                    text = stringPlaceholder?: stringResource(id = placeholder ?: R.string.default_place_holder),
                     style = MaterialTheme.typography.bodyMedium,
                 )
             },

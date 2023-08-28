@@ -25,6 +25,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.ui.platform.LocalContext
 
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -34,6 +35,8 @@ import androidx.compose.ui.text.style.TextAlign
 
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.thingclips.smart.api.router.UrlRouter
+import com.thingclips.smart.family.main.view.activity.FamilyManageActivity
 
 
 @Composable
@@ -42,7 +45,10 @@ fun SplashScreenView(
     viewModel: SplashScreenViewModel = hiltViewModel()
 ) {
     if (viewModel.navigateToHomeScreen) {
-        onNavigate(RouteList.HOME_SCREEN)
+        UrlRouter.execute(UrlRouter.makeBuilder(LocalContext.current, "family_manage"));
+
+//        onNavigate(RouteList.HOME_SCREEN)
+        viewModel.onNavigate()
     }
     if(viewModel.navigateToLoginScreen){
         onNavigate(RouteList.LOGIN_SCREEN)
