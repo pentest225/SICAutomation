@@ -4,10 +4,7 @@ import com.thingclips.smart.home.sdk.api.IThingHomeStatusListener
 import com.thingclips.smart.home.sdk.bean.DashBoardBean
 import com.thingclips.smart.home.sdk.bean.HomeBean
 import com.thingclips.smart.home.sdk.bean.WeatherBean
-import com.thingclips.smart.home.sdk.callback.IGetHomeWetherCallBack
-import com.thingclips.smart.home.sdk.callback.IIGetHomeWetherSketchCallBack
-import com.thingclips.smart.interior.device.confusebean.MQ_802_PushAlarmBean
-import com.thingclips.smart.sdk.api.IResultCallback
+
 
 enum class TempUnit(vl:Int) {
     Celsius(1 ),Fahrenheit(2)

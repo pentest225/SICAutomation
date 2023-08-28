@@ -3,7 +3,11 @@ package ci.orange.core_ui.ui.theme
 import androidx.compose.ui.graphics.Color
 
 
-
+val purple = Color(0xFF6C5DD3)
+val orange = Color(0xFFFF7900)
+val green = Color(0xFF50BE87)
+val lightBlue = Color(0xFF4BB4E6)
+val gray = Color(0xFF8F8F8F)
 
 val md_theme_light_primary = Color(0xFFFF5722)
 val md_theme_light_onPrimary = Color(0xFFFFFFFF)

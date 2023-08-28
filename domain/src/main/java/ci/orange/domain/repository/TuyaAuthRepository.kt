@@ -3,6 +3,7 @@ package ci.orange.domain.repository
 import com.thingclips.smart.android.user.bean.User
 
 interface TuyaAuthRepository {
+    fun getConnectedUser():User
     suspend fun loginWithPhoneAndPassword(countryCode:String= "225",phoneNumber: String,password:String):Result<User>
     suspend fun loginWithPhoneAndCodeVerification(countryCode:String= "",phoneNumber: String,code:String)
     suspend fun sendVerificationCode(userName: String,region:String ="",countryCode:String = "225",type: Int):Result<Boolean>

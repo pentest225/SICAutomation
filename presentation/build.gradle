@@ -67,6 +67,8 @@ dependencies {
     implementation 'com.alibaba:fastjson:1.1.67.android'
     implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.14.9'
 
+    implementation 'com.thingclips.smart:thingsmart:5.1.0'
+
     //FOR UI BIZZBUNDLE
     //UTILISE POUR LE HOME UIBIZBUNDLE
     implementation 'com.thingclips.smart:thingsmart-bizbundle-family:5.2.0-16'

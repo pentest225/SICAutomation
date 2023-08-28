@@ -12,7 +12,7 @@ import kotlin.coroutines.resumeWithException
 
 
 class TuyaAuthRepositoryImpl : TuyaAuthRepository {
-
+    override fun getConnectedUser(): User = ThingHomeSdk.getUserInstance().user!!
     override suspend fun loginWithPhoneAndPassword(
         countryCode: String,
         phoneNumber: String,

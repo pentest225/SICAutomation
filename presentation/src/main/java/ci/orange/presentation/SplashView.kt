@@ -45,13 +45,12 @@ fun SplashScreenView(
     viewModel: SplashScreenViewModel = hiltViewModel()
 ) {
     if (viewModel.navigateToHomeScreen) {
-        UrlRouter.execute(UrlRouter.makeBuilder(LocalContext.current, "family_manage"));
-
-//        onNavigate(RouteList.HOME_SCREEN)
+        onNavigate(RouteList.HOME_SCREEN)
         viewModel.onNavigate()
     }
     if(viewModel.navigateToLoginScreen){
         onNavigate(RouteList.LOGIN_SCREEN)
+        viewModel.onNavigate()
     }
     SplashScreenContent()
 }
