@@ -8,6 +8,7 @@ val orange = Color(0xFFFF7900)
 val green = Color(0xFF50BE87)
 val lightBlue = Color(0xFF4BB4E6)
 val gray = Color(0xFF8F8F8F)
+val lightGray = Color(0x698F8F8F)
 
 val md_theme_light_primary = Color(0xFFFF5722)
 val md_theme_light_onPrimary = Color(0xFFFFFFFF)

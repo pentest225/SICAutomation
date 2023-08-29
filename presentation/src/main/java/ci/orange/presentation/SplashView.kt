@@ -35,6 +35,7 @@ import androidx.compose.ui.text.style.TextAlign
 
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import ci.orange.presentation.home.components.FastActionSection
 import com.thingclips.smart.api.router.UrlRouter
 import com.thingclips.smart.family.main.view.activity.FamilyManageActivity
 
@@ -53,6 +54,7 @@ fun SplashScreenView(
         viewModel.onNavigate()
     }
     SplashScreenContent()
+
 }
 
 @Composable
